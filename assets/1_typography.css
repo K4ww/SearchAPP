@@ -1,0 +1,761 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E1E1E;
+    
+    }
+    #iput{
+        background-color:transparent;
+        border:0.5px solid gray;
+        opacity:0.1px;
+        text-align:center;
+    }
+    input::placeholder {
+    text-align: center;
+    }
+    #myimg{
+        position:absolute;
+        left:45%;
+        top:10%; 
+        box-shadow: 50px 50px 20px black;
+    }
+    #searchpng{
+    position:absolute;
+        left:24%;
+        top:42.5%;
+        z-index: 1;
+    }
+    #filter{
+    position:absolute;
+        left:70%;
+        top:41.2%;
+        background-color:#007FA2;
+        border-radius:50px;
+        width:40px;
+        height:40px;
+        border-color:transparent;
+        color:white;
+        font-size:20px;
+        text-align:center;
+        z-index: 1;
+    }
+    #connecter {
+        position:absolute;
+        top:5%;
+        left:90%;
+        background-color:#007FA2;
+        width:103px;
+        border-radius:50px;
+        border-color:transparent;
+        color:white;
+        font-size:12px;
+        height:35px;
+    }
+    #help{
+    position:absolute;
+        left:86.5%;
+        top:5%;
+        background-color:transparent;
+        border-radius:50px;
+        width:40px;
+        height:40px;
+        border-color:gray;
+        border:0.1px solid;
+        color:gray;
+        font-size:18px;
+        text-align:center;
+    }
+    #motCles {
+        display: flex;
+        position:absolute;
+        column-gap: 20px;
+        justify-content: space-between;
+        top:53%;
+        left:24%;
+        background-color: transparent;
+        display: none;
+    
+    }
+    #motCles Button{
+    background-color:transparent;
+        width:80px;
+        height:40px;
+        border-color:gray;
+        border-radius:20px;
+        text-align:center;
+        border:0.1px solid;
+        color:gray;
+        font-size:10px;
+        display: block;
+    }
+    
+    #mysearchbar{
+        background-color: transparent;
+        border:0.5px solid gray;
+        position: absolute;
+        width: 52%;
+        height: 10%;
+        left:22%;
+        top:39%;
+        border-radius: 50px;
+        z-index: 1px;
+    }
+    
+    #mysearchinput{
+        background-color: transparent;
+        position:fixed;
+        top:42%;
+        left: 25.5%;
+        width: 50%;
+        font-size: 20px;
+        color: white;
+        border-color: transparent;
+        
+    }
+    #mysearchinput::placeholder{
+        text-align: left;
+        color: gray;
+    }
+    #mysearchinput:focus::placeholder{
+        opacity: 0;
+    }
+    .dropdown-content{
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        left:-5%;
+        border-radius: 50px;
+        top: 16%;
+        display: none;
+    }
+    .dropdown-content ul li {
+        list-style-type: none;
+
+    }
+    .dropdown-content ul li a{
+        display: block;
+        background-color: transparent;
+        margin-bottom: 10px;
+        padding: 5px;
+        color: white;
+        padding-left: 50px;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 0px;
+      
+    }
+.hover{background-color: #171717;}
+.dropdown-content a:hover{
+    background-color: #171717;
+}
+.searchButtons{
+    position: relative;
+    background-color: transparent;
+    width:40%;
+    height: 80px;
+    top: 300px;
+    left:330px;
+    display: flex;
+    column-gap: 5px;
+    justify-content: space-between;
+
+}
+.searchButtons Button{
+        background-color:transparent;
+        width:110px;
+        height:40px;
+        border-color:transparent;
+        border-radius:20px;
+        text-align:center;
+        color:white;
+        font-weight: bold;
+        font-size:10px;
+        
+
+}
+.searchButtons a{
+    background-color:transparent;
+    width:110px;
+    height:20px;
+    border-color:gray;
+    border-radius:20px;
+    text-align:center;
+    border:0.1px solid gray;
+    color:white;
+    font-weight: bold;
+    font-size:10px;
+    text-decoration: none;
+}
+#Recherche{
+border:transparent}
+
+#search{
+    background-color: #007FA2;
+    border: transparent;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-align: center;
+    z-index: 1;
+}
+
+#mytitle{
+    color: red;
+}
+#mysearchbar:hover{
+    border-color: transparent;
+    background-color: #444444;
+}
+#myLogo{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+}
+#FilterBar{
+    position: fixed;
+    width: 20%;
+    height: 80%;
+    background-color: transparent;
+    top:130px;
+    left: 20px;
+    color:white;
+    align-items: center;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+
+}
+#FilterBar input{
+       background-color: transparent;
+       border-color: transparent;
+       border-bottom: 0.2px solid gray;
+       display: block;
+       color: aliceblue;
+       margin-bottom: 30px;
+}
+#FilterBar input::placeholder{
+     color: white;
+     opacity: 30%;
+     text-align: left;
+
+}
+.vl{
+    position: fixed;
+    border-left: 1px solid gray;
+    height: 550px;
+    left:230px;
+    top: 130px;
+}
+#searchBar{
+    position: fixed;
+    background-color: transparent;
+    width: 50%;
+    height: 8%;
+    border:0.5px solid gray;
+    left:15%;
+    top:5%;
+    border-radius: 50px;
+    z-index: 1;
+
+}
+#InputResult{
+    background-color:transparent;
+    position:fixed;
+    top:7%;
+    left: 17%;
+    width: 30%;
+    font-size: 20px;
+    color: white;
+    border-color: transparent;
+    z-index: 1;
+}
+#InputResult::placeholder{
+    text-align: left;
+}
+#searchBar:hover{
+    
+    border-color: transparent;
+    background-color: #444444;
+}
+
+#results{
+    position: absolute;
+    background-color: transparent;
+    border:1px #007FA2;
+    width: 50%;
+    height: 100%;
+    left:14%;
+    
+    top: 18%;
+    z-index: 0;
+}
+#results ul li {
+    list-style-type: none;
+    z-index: 0;
+    height: 300px;
+}
+#results ul li a{
+    display: block;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 0;
+    position: relative;
+    left: 0%;
+    top: 2%;
+  
+}
+#MyResults li{
+    border: 0.2px solid gray;
+    margin-bottom: 7px;
+
+}
+
+#MyResults p{
+    position: relative;
+    color: gray;
+    left:2%;
+    top: 0%;
+    width: 90%;
+}
+#collections{
+    position: absolute;
+    background-color: transparent;
+    border:1px #007FA2;
+    width: 50%;
+    height: 100%;
+    left:15%;
+    
+    top: 5%;
+    z-index: 0;
+}
+#collections ul li {
+    list-style-type: none;
+    z-index: 0;
+    height: 300px;
+}
+#collections ul li a{
+    display: block;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 0;
+    position: relative;
+    left: 0%;
+    top: 2%;
+  
+}
+#Mycollections li{
+    border: 0.2px solid gray;
+    margin-bottom: 7px;
+
+}
+#keywordBarée{
+    display: flex;
+    margin-left: 0%;
+    column-gap: 0px;
+}
+#keywordBarée p{
+    display:inline-block;
+    color: white;
+    width: 80px;
+    background-color: transparent;
+}
+
+
+#titleresult{
+    display: flex;
+    margin-left: 5px;
+    margin-top: 10px;
+    justify-content:flex-start;
+    position: relative;
+    background-color: transparent;
+}
+#titleresult a{
+    display: block;
+    margin-right: 5px;
+    
+}
+#titleresult img{
+    display: block;
+    position: relative;
+    top:7px;
+    width: 20px;
+    height: 20px;
+}
+
+#TitleFilter{
+    background-color: transparent;
+        border:0.5px solid gray;
+        position: absolute;
+        width: 52%;
+        height: 10%;
+        left:22%;
+        top:39%;
+        border-radius: 50px;
+        z-index: 1px;
+
+}
+#TitleInput{
+    
+    background-color: transparent;
+    position:fixed;
+    top:42%;
+    left: 25.5%;
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    border-color: transparent;
+}
+#ResultAnalyse{
+    background-color:transparent;
+    width: 100%;
+    position: fixed;
+    color: rgb(227, 227, 227);
+    top:12%;
+    height: 5%;
+    left: 210px;
+    z-index: 1;
+}
+#ResultAnalyse ul li{
+
+    list-style-type: none;
+    display: inline-block;
+    background-color: transparent;
+    font-size: 15px;
+    height: 5%;
+    margin-right: 30px;
+    text-decoration: none;
+}
+#filters {
+    position: absolute;
+    background-color:transparent;
+    width: 49%;
+    height: 40%;
+    left:23%;
+    top:52%;
+    z-index: 0;
+    display: block;
+
+}
+#filters input{
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-left: 0px;
+    border-radius:50px;
+    margin-bottom: 30px;
+    z-index: 1;
+    color: white;
+    border:0.5px solid gray;
+      
+    padding-left: 20px;
+
+}
+#filters input::placeholder{
+    text-align: left;
+    color: gray;
+}
+#filters input:focus::placeholder{
+    opacity: 0;
+}
+#inlinediv {
+    display: flex;
+    column-gap: 20px;
+    background-color: transparent;
+}
+#inlinediv input{
+       display: block;
+}
+#inlinediv #typeInput{
+    background-color:#1E1E1E;
+    position: relative;
+    height: 50px;
+    margin-left: 0px;
+    border-radius:50px;
+    margin-bottom: 30px;
+    z-index: 1;
+    color: white;
+    border:0.5px solid gray;
+      
+    padding-left: 20px;
+    display: block;
+    width: 300px;
+}
+#typeInput input{
+    position: relative;
+    border: transparent;
+}
+.mantine-5v12bf{
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid gray;
+    border-radius: 50px;
+    height: 50px;
+}
+.mantine-1y9bl4z{
+    background-color: transparent;
+    color: gray;
+    border: 0.5px solid gray;
+    border-radius: 50px;
+    height: 50px;
+}
+.mantine-1rhg0ql{
+    background-color: #1E1E1E;
+    color: white;
+    border: 0.1px solid gray;
+}
+.mantine-4kwz18{
+    color: white;
+}
+.mantine-4kwz18:hover{
+    background-color: transparent;
+    border: 0.1px solid gray;
+}
+.mantine-9xpqaw{
+    color:gray;
+}
+.mantine-9xpqaw:hover{
+    background-color: white;
+}
+.mantine-5neklz{
+    color: gray;
+}
+.mantine-2uofp0{
+    position: relative;
+    top:280px;
+    left:640px;
+}
+.Select-control{
+    background-color: transparent;
+    border: transparent;
+    top:13px;
+    right: 8px;
+    color: white;
+}
+.Select--single>.Select-control .Select-value, .Select-placeholder{
+    color: gray;
+    font-size: 14px;
+}
+.Select-menu-outer{
+    background-color: #1E1E1E;
+    border: 0.2px solid gray;
+    border-radius: 5px;
+
+}
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
+    color: white;
+}
+.is-focused:not(.is-open)>.Select-control{
+    border-color: transparent;
+}
+.is-open>.Select-control{
+    background-color: transparent;
+    border: transparent;
+    background: transparent;
+}
+
+#inlinediv #dateInput{
+    margin-left: 50px;
+    background-color: transparent;
+    
+}
+#Statistics{
+    position:fixed;
+    left: 65%;
+    top:20%;
+    width: 34%;
+    height: 77%;
+    background-color: transparent;
+    border:solid 1px gray;
+    color: black;
+    overflow: scroll;
+}
+#country-document-bar-graph{
+    position: relative;
+    top:50px;
+}
+#ExplainDateInput{
+    position: relative;
+    color: white;
+    font-size: 10px;
+    width: 30%;
+    left:90px;
+
+}
+#output{
+    position: fixed;
+    color: white;
+    left:50%;
+    z-index: 1;
+}
+#LoginForm{
+    position: fixed;
+    display: block;
+    width: 25%;
+    height: 60%;
+    top:18%;
+    left: 37%;
+    background-color:#1E1E1E;
+    border-radius: 30px;
+    z-index: 1;
+    align-items: center;
+    box-shadow: 10px black;
+
+
+}
+#LoginForm input{
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 19px;
+    width: 80%;
+    height: 12%;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding-left: 30px;
+    color: white;
+
+}
+#LoginForm input::placeholder{
+    text-align: left;
+    color: gray;
+}
+#LoginForm input:focus::placeholder{
+    opacity: 0;
+}
+#LoginForm img{
+    display: flex;
+    position: relative;
+    width: 18%;
+    margin-bottom: 60px;
+    height: 15%;
+    left: 42%;
+    top: 5%;
+    border-radius: 10px;
+
+}
+#exitLoginform{
+    display: block;
+    float: right;
+    top:3%;
+    position: relative;
+    right: 3%;
+    background-color: transparent;
+    border: transparent;
+    color: gray;
+
+}
+#exitLoginform:hover{
+    color: white;
+}
+#inlineLogin{
+    position: relative;
+    margin-top: 20%;
+    width: 100%;
+    height: 50px;
+    display: block;
+    
+}
+#suivant{
+ position: relative;
+ background-color: #007FA2;
+ padding-top: 15px;
+ padding-bottom: 10px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 50px;
+ left: 20%;
+}
+#inlineLogin a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    display: inline;
+    position: relative;
+    top:60%;
+}
+#shadow{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    align-self: center;
+}
+#ProfilePicture{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 70px;
+}
+#profilepicture{
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 80px;
+left:90%;
+top:5%;
+}
+#date::placeholder{
+    color: gray;
+}
+#accountManager{
+    position: absolute;
+    top:15%;
+    left:73%;
+    background-color: #2B2B2B;
+    width: 20%;
+    height: 80px;
+    border-radius: 50px;
+    align-items: center;
+    box-shadow: black 12px 12px 12px;
+}
+#accountManager button{
+  position: relative;
+  top: 30px;
+  left: 100px;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1E1E1E;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cdcbcb;
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+ #buttonscollect button{
+    position:relative;
+    margin-right: 10px;
+ }

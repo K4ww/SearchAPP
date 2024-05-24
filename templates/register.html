@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Align form and heading vertically */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        h2 {
+            margin-bottom: 20px; /* Add space between heading and form */
+            color: #333;
+        }
+    
+        .error-message {
+            color: red;
+            margin: 10px 0; /* Add margin around error message */
+            text-align: center; /* Center error message */
+        }
+    
+        /* Center the form on the page */
+    form {
+        width: 100%;
+            max-width: 340px; /* Set max width for larger screens */
+            margin: 0 auto; /* Center form in the page */
+            padding: 40px; /* Increase padding for better spacing */
+            background-color: #fff;
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            text-align: center; /* Center-align the text for consistency */
+    }
+
+         /* Adjust the first label margin */
+    form label:first-of-type {
+        margin-top: 0px;
+    }
+    
+        /* Adjust the label spacing and style */
+    label {
+        display: block;
+        margin-top: 0; /* Remove top margin for alignment */
+        margin-bottom: 5px; /* Add some space between label and input */
+        color: #333;
+        font-weight: bold;
+        text-align: left; /* Align text to the left */
+    }
+
+    
+         /* Adjust input fields to have a uniform style */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+            padding: 12px; /* Increase padding for better touch targets */
+            margin-bottom: 20px; /* Increase margin for better spacing */
+            border: 2px solid #ccc; /* Thicker border for better visual structure */
+            border-radius: 4px;
+            font-size: 16px; /* Increase font size for better readability */
+    }
+    
+         /* Style adjustments for the submit button */
+    input[type="submit"] {
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+            padding: 12px; /* Increase padding for a larger button */
+            margin-bottom: 20px; /* Increase margin for better spacing */
+            border: none; /* Remove border for button */
+            border-radius: 4px; /* Consistent border radius */
+            background-color: #007FA2;
+            color: white;
+            font-size: 16px; /* Match input field font size */
+            cursor: pointer; /* Change cursor to pointer for button */
+            transition: background-color 0.3s; /* Smooth background transition */
+    }
+    
+        input[type="submit"]:hover {
+            background-color: #00708f; /* Darken button on hover for feedback */
+        }
+    
+        p {
+            color: #555;
+        }
+    
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Register</h2>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="error-message">
+                {{ messages[0] }}
+                {{ messages[1] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+    <form method="POST" action="{{ url_for('register') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+    
+        <label for="family_name">Family Name:</label>
+        <input type="text" id="family_name" name="family_name" required><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+    
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+    
+        <input type="submit" value="Register">
+    </form>
+    
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</body>
+</html>
